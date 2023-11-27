@@ -30,7 +30,15 @@
 								<div class="block-content">
 									<h2 class="block-title"><?php the_sub_field( 'title' ); ?></h2>
 									<p class="block-description"><?php the_sub_field( 'description' ); ?></p>
-									<p class="block-amenities-title"><?php esc_html_e( 'Ausstattung:', 'digid' ); ?></p>
+									<?php
+										$notes = get_sub_field( 'notes' );
+										if ( $notes ) :
+											?>
+											<p class="block-notes-title"><?php esc_html_e( 'Öffnungszeiten:', 'digid' ); ?></p>
+											<p class="block-description"><?php the_sub_field( 'notes' ); ?></p>
+											<?php
+										endif;
+									?>
 								</div>
 								<div class="block-gallery-navigation">
 									<div class="swiper-button-prev block-gallery-button-prev-<?php echo esc_attr( $counter ); ?>"></div>
@@ -48,7 +56,15 @@
 								<div class="block-content">
 									<h2 class="block-title"><?php the_sub_field( 'title' ); ?></h2>
 									<p class="block-description"><?php the_sub_field( 'description' ); ?></p>
-									<p class="block-amenities-title"><?php esc_html_e( 'Ausstattung:', 'digid' ); ?></p>
+									<?php
+										$notes = get_sub_field( 'notes' );
+										if ( $notes ) :
+											?>
+											<p class="block-notes-title"><?php esc_html_e( 'Öffnungszeiten:', 'digid' ); ?></p>
+											<p class="block-description"><?php the_sub_field( 'notes' ); ?></p>
+											<?php
+										endif;
+									?>
 								</div>
 								<div class="block-gallery-navigation">
 									<div class="swiper-button-prev block-gallery-button-prev-<?php echo esc_attr( $counter ); ?>"></div>
