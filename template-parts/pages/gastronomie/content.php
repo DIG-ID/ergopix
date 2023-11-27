@@ -50,7 +50,7 @@
 									<p class="block-description"><?php the_sub_field( 'description' ); ?></p>
 									<p class="block-amenities-title"><?php esc_html_e( 'Ausstattung:', 'digid' ); ?></p>
 								</div>
-								<div class="zimmmer-gallery-navigation">
+								<div class="block-gallery-navigation">
 									<div class="swiper-button-prev block-gallery-button-prev-<?php echo esc_attr( $counter ); ?>"></div>
 									<div class="swiper-button-next block-gallery-button-next-<?php echo esc_attr( $counter ); ?>"></div>
 								</div>

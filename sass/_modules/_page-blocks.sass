@@ -1,0 +1,177 @@
+.section-blocks-content
+  
+  .block-card-wrapper
+    position: relative
+    margin: 152px auto
+    &::after
+      display: block
+      content: ''
+      border: 2px solid $medium-grey
+      position: absolute
+      top: -40px
+      left: 15%
+      right: 35%
+      bottom: -40px
+      z-index: -2
+      //width: 150%
+      //height: 100%
+      //background-color: red
+    .block-gallery
+      position: relative
+      z-index: -1
+      .swiper-wrapper
+        .swiper-slide
+          img
+            object-fit: cover
+            min-height: 792px
+            max-height: 792px
+            height: auto
+    .block-content-wrapper
+      left: -152px
+      margin-top: 40px
+      .block-content
+        background-color: #fff
+        padding: 40px 48px
+        .block-title
+          margin-bottom: 32px
+          color: $main-black
+          font-size: 48px
+          line-height: 64px
+        .block-description
+          margin-bottom: 32px
+          color: $main-black
+          font-family: Work Sans
+          font-size: 18px
+          font-style: normal
+          font-weight: 400
+          line-height: 32px
+        .block-amenities-title
+          font-size: 16px
+          font-style: normal
+          font-weight: 600
+          margin-bottom: 28px
+          color: $main-red
+        .block-amenities
+          display: flex
+          justify-content: flex-start
+          gap: 16px
+          list-style: none
+          margin: 0
+          padding: 0
+          li
+            figure
+              display: flex
+              flex-direction: column
+              align-items: center
+              justify-content: center
+              max-width: 64px
+              span
+                display: flex
+                justify-content: center
+                align-items: center
+                width: 64px
+                height: 64px
+              figcaption
+                text-align: center
+                color: $main-black
+                font-family: Work Sans
+                font-size: 12px
+                font-style: normal
+                font-weight: 300
+                line-height: normal
+                white-space: normal
+                word-break: break-word
+
+      .block-gallery-navigation
+        position: relative
+        display: flex
+        gap: 32px
+        margin-left: 120px
+        margin-top: 16px
+        .swiper-button-next,
+        .swiper-button-prev
+          position: relative
+          right: initial
+          left: initial
+          top: initial
+          margin-top: initial
+          z-index: initial
+
+  .block-card-wrapper--rev
+    //background-color: red
+    
+    &::after
+      left: 35%
+      right: 15%
+    .block-content-wrapper
+      left: initial
+      right: -152px
+      .block-gallery-navigation
+        margin-right: 120px
+        margin-left: initial
+        justify-content: flex-end
+
+
+
+@media (max-width: $md)
+  .page-template-page-block
+    .section-block-content
+      .block-card-wrapper
+        &::after
+          border: 2px solid $medium-grey
+          top: -60px
+          left: -15%
+          right: 20%
+          bottom: -40px
+        .block-gallery
+          .swiper-wrapper
+            .swiper-slide
+              img
+                min-height: 300px
+                max-height: 300px
+        .block-content-wrapper
+          left: initial
+          margin-top: -40px
+          .block-content
+            padding: 40px 26px
+            .block-title
+              margin-bottom: 32px
+              font-size: 40px
+              line-height: 48px
+            .block-description
+              margin-bottom: 32px
+              font-size: 18px
+              line-height: 32px
+            .block-amenities-title
+              font-size: 16px
+              margin-bottom: 28px
+            .block-amenities
+              display: flex
+              justify-content: flex-start
+              gap: 16px
+              list-style: none
+              margin: 0
+              padding: 0
+              li
+                figure
+                  display: flex
+                  flex-direction: column
+                  align-items: center
+                  justify-content: center
+                  max-width: 64px
+                  span
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    width: 64px
+                    height: 64px
+                  figcaption
+                    text-align: center
+                    color: $main-black
+                    font-family: Work Sans
+                    font-size: 12px
+                    font-style: normal
+                    font-weight: 300
+                    line-height: normal
+                    white-space: normal
+                    word-break: break-word
