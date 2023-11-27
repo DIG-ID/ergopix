@@ -2,9 +2,9 @@
 	<div class="container">
 		<div class="row justify-content-center">
 		<?php
-		if ( have_rows( 'block' ) ) :
+		if ( have_rows( 'blocks' ) ) :
 			$counter = 0;
-			while ( have_rows( 'block' ) ) :
+			while ( have_rows( 'blocks' ) ) :
 				the_row();
 				if ( $counter % 2 == 0 ) :
 					?>
