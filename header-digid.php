@@ -23,17 +23,7 @@ if ( function_exists( 'icl_get_languages' ) ) {
 	<link rel="icon" type="image/png" sizes="32x32" href="<?php echo get_template_directory_uri(); ?>/images/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="<?php echo get_template_directory_uri(); ?>/images/favicon-16x16.png">
 	<link rel="manifest" href="<?php echo get_template_directory_uri(); ?>/images/site.webmanifest">
-	<title><?php wp_title(); ?></title>
-	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,700i|Work+Sans" rel="stylesheet">
-	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/fonts/fontawesome/css/font-awesome.min.css" />
 	<?php wp_head(); ?>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"/>
-	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/js/slick/slick.css">
-	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/js/slick/slick-theme.css">
-	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
-	<script src="<?php echo get_template_directory_uri(); ?>/js/slick/slick.js" type="text/javascript" charset="utf-8"></script>
-
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-19TPK24ZR7"></script>
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-19TPK24ZR7"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
@@ -63,82 +53,10 @@ if ( function_exists( 'icl_get_languages' ) ) {
 	<!--End of Zendesk Chat Script-->
 	<!-- Facebook Pixel Code -->
 	<script>
-		!function(f,b,e,v,n,t,s)   {if(f.fbq) return;n=f.fbq=function() {n.callMethod?   n.callMethod.apply(n,arguments) :n.queue.push(arguments) };  if(!f._fbq) f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';  n.queue=[];t=b.createElement(e) ;t.async=!0;  t.src=v;s=b.getElementsByTagName(e) [0];  s.parentNode.insertBefore(t,s) }(window, document,'script',  'https://connect.facebook.net/en_US/fbevents.js') ;  fbq('init', '290390748774757') ;  fbq('track', 'PageView') ;</script> <noscript> <img height="1" width="1" style="display:none"  src="https://www.facebook.com/tr? id=290390748774757&ev=PageView&noscript=1"/>
+		!function(f,b,e,v,n,t,s) {if(f.fbq) return;n=f.fbq=function() {n.callMethod?   n.callMethod.apply(n,arguments) :n.queue.push(arguments) };  if(!f._fbq) f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';  n.queue=[];t=b.createElement(e) ;t.async=!0;  t.src=v;s=b.getElementsByTagName(e) [0];  s.parentNode.insertBefore(t,s) }(window, document,'script',  'https://connect.facebook.net/en_US/fbevents.js') ;  fbq('init', '290390748774757') ;  fbq('track', 'PageView') ;</script> <noscript> <img height="1" width="1" style="display:none"  src="https://www.facebook.com/tr? id=290390748774757&ev=PageView&noscript=1"/>
 	</noscript>
 	<!-- End Facebook Pixel Code -->
 
-	<script type="text/javascript">
-		(function (i, s, o, g, r, a, m) {
-			i['SBSyncroBoxParam'] = r; i[r] = i[r] || function () {
-				(i[r].q = i[r].q || []).push(arguments)
-			}, i[r].l = 1 * new Date(); a = s.createElement(o),
-			m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-		})(window, document, 'script', 'https://cdn.simplebooking.it/search-box-script.axd?IDA=5288','SBSyncroBox');
-
-		SBSyncroBox({
-				CodLang: '<?php echo strtoupper( $lang ); ?>',
-				Styles: {
-				Theme: 'light-pink',
-				CustomColor: "#000000",
-				CustomButtonBGColor: "rgba(0,0,0,0.2)",
-				CustomButtonHoverBGColor: "rgba(0,0,0,0.1)",
-				CustomIconColor: "rgba(0,0,0,0.2)",
-				CustomLinkColor: "rgba(0,0,0,0.6)"
-			}
-		});
-
-		SBSyncroBox({
-			CodLang: '<?php echo strtoupper( $lang ); ?>',
-			Currency: 'CHF',
-			MainContainerId: 'sb-container-bar',
-			Labels: {
-				NumAdults: {'DE':'Pers.'},
-			},
-			Styles: {
-				Theme: 'light-pink',
-				CustomColor: "#eeeeee",
-				CustomLabelColor:"#eeeeee",
-				CustomBGColor: "transparent",
-				CustomButtonColor: "#eeeeee",
-				CustomButtonBGColor: "#9e0e0e",
-				CustomIntentSelectionDaysBGColor: "#9e0e0e",
-				CustomIntentSelectionColor: "#eeeeee",
-				CustomButtonHoverBGColor:"#9e0e0e",
-				CustomLabelHoverColor:"#eeeeee",
-				CustomLinkColor:"#eeeeee",
-				CustomBoxShadowColorFocus:"#141414",
-				CustomAddRoomBoxShadowColor:"#141414",
-				CustomAccentColor:"#eeeeee",
-				CustomFieldBackgroundColor:"#141414",
-				CustomSelectedDaysColor:"#9e0e0e",
-				CustomCalendarBackgroundColor:"#807B73",
-				CustomWidgetColor:"#eeeeee",
-				CustomWidgetBGColor:"#807B73",
-				CustomWidgetElementHoverColor:"#000",
-				CustomWidgetElementHoverBGColor:"#000",
-				CustomBoxShadowColor:"#141414",
-				CustomBoxShadowColorHover:"#141414",
-				CustomColorHover:"#eeeeee",
-				CustomIconColor:"#eeeeee",
-				CustomAccentColorHover:"#eeeeee"
-			}
-		});
-	</script>
-	<script type="text/javascript">
-		/*$(function() { 
-			$(document).click(function() {
-				$('#covid-button').removeClass('opened');
-				$('#covid-text').animate({left: '-705px'});
-				$('#covid-text').fadeOut(600);
-			});
-			$('#covid-button').click(function(){
-				$(this).addClass('opened');
-				$('#covid-text').fadeIn();
-				$('#covid-text').animate({left: '0px'});
-				return false;
-			});
-		});*/
-	</script>
 </head>
 
 <body <?php body_class(); ?>>
@@ -181,7 +99,7 @@ if ( function_exists( 'icl_get_languages' ) ) {
 					//#[link] =>
 				}
 			} elseif ( is_page() ) {
-				$imageBg = @reset( wp_get_attachment_image_src( get_post_thumbnail_id(), 'gallery-full' ) );
+				//$imageBg = @reset( wp_get_attachment_image_src( get_post_thumbnail_id(), 'gallery-full' ) );
 			} elseif ( is_single() && $post->post_type == 'post' ) {
 				// $imageBg = @reset(wp_get_attachment_image_src( get_post_thumbnail_id(), 'full'));
 			}
@@ -193,7 +111,7 @@ if ( function_exists( 'icl_get_languages' ) ) {
 			}
 		}
 		?>
-		<header <?php echo $bg; ?>>
+		<header <?php //echo $bg; ?>>
 			<div class="main-header">
 				<div class="header-menu-wrapper container-fluid">
 					<div class="header-menu">
@@ -256,31 +174,6 @@ if ( function_exists( 'icl_get_languages' ) ) {
 					</div>
 				</div>
 			</div>
-			<div class="page-header-block">
-				<?php 
-				if(is_front_page() && !is_404()){
-					$zermattWeather = ergopix_getFormattedWeather();
-					?>
-						<h1><?php echo $headerTitle; ?></h1>
-						<?php 
-						# Weather
-						if(is_array($zermattWeather)){
-							?><span class="weather"><?php echo '<img src="'.get_template_directory_uri().'/images/weather/'.$zermattWeather['icon'].'.png" alt="" class="weather-icon" /><span> '.$zermattWeather['temp'].'&deg; '.date_i18n('l d F  H \h i', ( time() + 7200 ) ); ?> (UTC +1)<span></span></span><?php 
-						}
-				}
-				else {
-					?>
-					<div class="container">
-						<div class="row">
-							<div class="col-md-11 offset-md-1">
-								<h1><?php echo $headerTitle; ?></h1>
-							</div>
-						</div>
-					</div>
-					<?php 
-				} 
-				?>
-			</div>
 			<div class="header-social">
 				<div class="container reference-container">
 					<div class="row">
@@ -335,7 +228,7 @@ if ( function_exists( 'icl_get_languages' ) ) {
 					}
 					foreach($remasterizeMMenu as $mID => $menuItem){
 						
-						$menuItemHTML = '<li id="li-'.$mID.'" class="item '.$activeItem.'">';
+						$menuItemHTML = '<li id="li-'.$mID.'" class="item '. $activeItem .'">';
 						
 						# Do we have Children?
 						$childList = '';

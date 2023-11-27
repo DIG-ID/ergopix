@@ -1,0 +1,185 @@
+.page-template-page-zimmer
+  top: 0
+  header
+    height: initial
+    margin-bottom: initial
+    background-position: initial
+    background-size: initial
+
+  .section-zimmer-content
+    
+    .zimmer-card-wrapper
+      position: relative
+      margin: 152px auto
+      &::after
+        display: block
+        content: ''
+        border: 2px solid $medium-grey
+        position: absolute
+        top: -40px
+        left: 15%
+        right: 35%
+        bottom: -40px
+        z-index: -2
+        //width: 150%
+        //height: 100%
+        //background-color: red
+      .zimmer-gallery
+        position: relative
+        z-index: -1
+        .swiper-wrapper
+          .swiper-slide
+            img
+              object-fit: cover
+              min-height: 792px
+              max-height: 792px
+              height: auto
+      .zimmer-content-wrapper
+        left: -152px
+        margin-top: 40px
+        .zimmer-content
+          background-color: #fff
+          padding: 40px 48px
+          .zimmer-title
+            margin-bottom: 32px
+            color: $main-black
+            font-size: 48px
+            line-height: 64px
+          .zimmer-description
+            margin-bottom: 32px
+            color: $main-black
+            font-family: Work Sans
+            font-size: 18px
+            font-style: normal
+            font-weight: 400
+            line-height: 32px
+          .zimmer-amenities-title
+            font-size: 16px
+            font-style: normal
+            font-weight: 600
+            margin-bottom: 28px
+            color: $main-red
+          .zimmer-amenities
+            display: flex
+            justify-content: flex-start
+            gap: 16px
+            list-style: none
+            margin: 0
+            padding: 0
+            li
+              figure
+                display: flex
+                flex-direction: column
+                align-items: center
+                justify-content: center
+                max-width: 64px
+                span
+                  display: flex
+                  justify-content: center
+                  align-items: center
+                  width: 64px
+                  height: 64px
+                figcaption
+                  text-align: center
+                  color: $main-black
+                  font-family: Work Sans
+                  font-size: 12px
+                  font-style: normal
+                  font-weight: 300
+                  line-height: normal
+                  white-space: normal
+                  word-break: break-word
+
+        .zimmmer-gallery-navigation
+          position: relative
+          display: flex
+          gap: 32px
+          margin-left: 120px
+          margin-top: 16px
+          .swiper-button-next,
+          .swiper-button-prev
+            position: relative
+            right: initial
+            left: initial
+            top: initial
+            margin-top: initial
+            z-index: initial
+
+    .zimmer-card-wrapper--rev
+      //background-color: red
+      
+      &::after
+        left: 35%
+        right: 15%
+      .zimmer-content-wrapper
+        left: initial
+        right: -152px
+        .zimmmer-gallery-navigation
+          margin-right: 120px
+          margin-left: initial
+          justify-content: flex-end
+
+
+
+@media (max-width: $md)
+  .page-template-page-zimmer
+    .section-zimmer-content
+      .zimmer-card-wrapper
+        &::after
+          border: 2px solid $medium-grey
+          top: -60px
+          left: -15%
+          right: 20%
+          bottom: -40px
+        .zimmer-gallery
+          .swiper-wrapper
+            .swiper-slide
+              img
+                min-height: 300px
+                max-height: 300px
+        .zimmer-content-wrapper
+          left: initial
+          margin-top: -40px
+          .zimmer-content
+            padding: 40px 26px
+            .zimmer-title
+              margin-bottom: 32px
+              font-size: 40px
+              line-height: 48px
+            .zimmer-description
+              margin-bottom: 32px
+              font-size: 18px
+              line-height: 32px
+            .zimmer-amenities-title
+              font-size: 16px
+              margin-bottom: 28px
+            .zimmer-amenities
+              display: flex
+              justify-content: flex-start
+              gap: 16px
+              list-style: none
+              margin: 0
+              padding: 0
+              li
+                figure
+                  display: flex
+                  flex-direction: column
+                  align-items: center
+                  justify-content: center
+                  max-width: 64px
+                  span
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    width: 64px
+                    height: 64px
+                  figcaption
+                    text-align: center
+                    color: $main-black
+                    font-family: Work Sans
+                    font-size: 12px
+                    font-style: normal
+                    font-weight: 300
+                    line-height: normal
+                    white-space: normal
+                    word-break: break-word
