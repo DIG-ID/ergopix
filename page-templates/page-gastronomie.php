@@ -10,6 +10,7 @@ if ( have_posts() ) :
 		get_template_part( 'template-parts/pages/page-header' );
 		get_template_part( 'template-parts/pages/page-intro' );
 		get_template_part( 'template-parts/pages/gastronomie/content' );
+		//get_template_part( 'template-parts/pages/gastronomie/content-alter' );
 		get_template_part( 'template-parts/modules/page-links' );
 	endwhile;
 endif;

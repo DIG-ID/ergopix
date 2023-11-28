@@ -5,7 +5,6 @@ document.addEventListener("DOMContentLoaded", () => {
 	window.addEventListener("load", () => {
 
     // Image Background Parallax Scroll
-    console.log('in');
     const parallax = document.querySelector('.section-page-header');
 
     // Parallax Effect for header

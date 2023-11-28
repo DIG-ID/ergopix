@@ -68,6 +68,13 @@ function digid_theme_enqueue_styles() {
 add_action( 'wp_enqueue_scripts', 'digid_theme_enqueue_styles' );
 
 
+add_action( 'after_setup_theme', 'digid_theme_setup' );
+function digid_theme_setup() {
+	add_image_size( 'block-portrait', 700, 800, );
+	add_image_size( 'page-header', 1920, 780, );
+}
+
+
 require("include/tinymce.php");
 require("include/post-types.php");
 require("include/taxonomies.php");

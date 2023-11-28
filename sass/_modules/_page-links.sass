@@ -1,4 +1,4 @@
-$mytransition: all 300ms ease-in-out
+$mytransition: all 600ms ease-in-out
 
 .section-page-links
   .page-link
@@ -9,6 +9,9 @@ $mytransition: all 300ms ease-in-out
       align-items: center
       min-height: 545px
       position: relative
+      background-color: rgba(255, 255, 255, 0)
+      mix-blend-mode: initial
+      transition: $mytransition
       &::after
         content: ''
         display: block
@@ -52,6 +55,8 @@ $mytransition: all 300ms ease-in-out
           path
             transition: $mytransition
       &:hover
+        background-color: rgba(255, 255, 255, 0.4)
+        mix-blend-mode: screen
         &::after
           border: 1px solid $main-red
         .page-link-button
@@ -63,6 +68,10 @@ $mytransition: all 300ms ease-in-out
             path
               stroke: #fff
               fill: #fff
+
+@media (max-width: $lg)
+  .section-page-links
+    margin-top: 64px
 
 @media (max-width: $md)
   .section-page-links

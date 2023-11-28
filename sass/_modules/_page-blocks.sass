@@ -1,8 +1,8 @@
 .section-blocks-content
-  
   .block-card-wrapper
     position: relative
-    margin: 152px auto
+    margin-top: 152px
+    margin-bottom: 152px
     &::after
       display: block
       content: ''
@@ -13,25 +13,34 @@
       right: 35%
       bottom: -40px
       z-index: -2
-      //width: 150%
-      //height: 100%
-      //background-color: red
-    .block-gallery
+    .block-image
+      margin-left: auto
+      margin-right: auto
       position: relative
+      z-index: -1
+      img
+        width: 100%
+        object-fit: cover
+        min-height: 792px
+        max-height: 792px
+        height: auto
+    .block-gallery
       z-index: -1
       .swiper-wrapper
         .swiper-slide
           img
+            width: 100%
             object-fit: cover
             min-height: 792px
             max-height: 792px
             height: auto
     .block-content-wrapper
-      left: -152px
+      //left: -152px
+      transform: translateX( -25% )
       margin-top: 40px
       .block-content
         background-color: #fff
-        padding: 40px 48px
+        padding: 48px
         .block-title
           margin-bottom: 32px
           color: $main-black
@@ -51,12 +60,32 @@
           font-weight: 600
           margin-bottom: 28px
           color: $main-red
+        .block-buttons-wrapper
+          .block-button
+            transition: .3s all ease-in-out
+            transform: scale(1.00000001)
+            display: inline-block
+            padding: 12px 24px
+            color: rgba(255,255,255,1)
+            font-family: "Work Sans"
+            font-size: 16px
+            font-weight: 500
+            line-height: 19px
+            border-radius: 3px
+            text-transform: uppercase
+            background-color: rgba(158,14,14,1)
+            box-shadow: 0 8px 24px 0 rgba(0,0,0,0.0)
+            margin-right: 15px
+            margin-bottom: 16px
+            &:hover
+              box-shadow: 0 8px 32px 0 rgba(0,0,0,0.14)
+              transform: scale(1.04)
 
       .block-gallery-navigation
         position: relative
         display: flex
         gap: 32px
-        margin-left: 120px
+        margin-left: 20%
         margin-top: 16px
         .swiper-button-next,
         .swiper-button-prev
@@ -67,51 +96,62 @@
           margin-top: initial
           z-index: initial
 
-  .block-card-wrapper--rev
-    //background-color: red
-    
-    &::after
-      left: 35%
-      right: 15%
-    .block-content-wrapper
-      left: initial
-      right: -152px
-      .block-gallery-navigation
-        margin-right: 120px
-        margin-left: initial
-        justify-content: flex-end
+    &--rev
+      //background-color: red
+      &::after
+        left: 35%
+        right: 15%
 
+      .block-image
+        //left: -152px
+      .block-gallery
+        //left: -152px
+      .block-content-wrapper
+        transform: translateX( 25% )
+        .block-gallery-navigation
+          margin-right: 120px
+          margin-left: initial
+          justify-content: flex-end
 
+@media (max-width: $lg)
+  .section-blocks-content
+    .block-card-wrapper
+      margin-top: 64px
+      margin-bottom: 0
+      &::after
+        top: -40px
+        left: -20%
+        right: 20%
+        bottom: 70px
+      &--rev
+        &::after
+          left: 20%
+          right: -20%
+      .block-content-wrapper
+        transform: translateX( 0% )
+        transform: translateY( -25% )
+        padding-left: 48px
+        padding-right: 48px
+        .block-content
+          padding: 32px
+        .block-gallery-navigation
+          margin-left: 25%
+      .block-image
+        img
+          min-height: 640px
+          max-height: 640px
+      .block-gallery
+        .swiper-wrapper
+          .swiper-slide
+            img
+              min-height: 792px
+              max-height: 792px
 
 @media (max-width: $md)
-  .page-template-page-block
-    .section-block-content
-      .block-card-wrapper
-        &::after
-          border: 2px solid $medium-grey
-          top: -60px
-          left: -15%
-          right: 20%
-          bottom: -40px
-        .block-gallery
-          .swiper-wrapper
-            .swiper-slide
-              img
-                min-height: 300px
-                max-height: 300px
-        .block-content-wrapper
-          left: initial
-          margin-top: -40px
-          .block-content
-            padding: 40px 26px
-            .block-title
-              margin-bottom: 32px
-              font-size: 40px
-              line-height: 48px
-            .block-description
-              margin-bottom: 32px
-              font-size: 18px
-              line-height: 32px
-            .block-notes-title
-              font-size: 16px
-              margin-bottom: 28px
+  .section-blocks-content
+    .block-card-wrapper
+      .block-content-wrapper
+        padding-left: 40px
+        padding-right: 40px
+        .block-content
+          padding: 32px
