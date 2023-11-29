@@ -18,7 +18,7 @@
 										foreach ( $images as $image_id ) :
 											?>
 											<div class="swiper-slide">
-												<?php echo wp_get_attachment_image( $image_id, 'full' ); ?>
+												<?php echo wp_get_attachment_image( $image_id, 'block-portrait' ); ?>
 											</div>
 											<?php
 										endforeach;
@@ -135,7 +135,7 @@
 										foreach ( $images as $image_id ) :
 											?>
 											<div class="swiper-slide">
-												<?php echo wp_get_attachment_image( $image_id, 'full' ); ?>
+												<?php echo wp_get_attachment_image( $image_id, 'block-portrait' ); ?>
 											</div>
 											<?php
 										endforeach;
