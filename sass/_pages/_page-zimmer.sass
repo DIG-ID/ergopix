@@ -7,10 +7,10 @@
     background-size: initial
 
   .section-zimmer-content
-    
     .zimmer-card-wrapper
       position: relative
-      margin: 152px auto
+      margin-top: 152px
+      margin-bottom: 152px
       &::after
         display: block
         content: ''
@@ -30,16 +30,17 @@
         .swiper-wrapper
           .swiper-slide
             img
+              width: 100%
               object-fit: cover
               min-height: 792px
               max-height: 792px
               height: auto
       .zimmer-content-wrapper
-        left: -152px
+        transform: translateX( -25% )
         margin-top: 40px
         .zimmer-content
           background-color: #fff
-          padding: 40px 48px
+          padding: 48px
           .zimmer-title
             margin-bottom: 32px
             color: $main-black
@@ -90,11 +91,11 @@
                   white-space: normal
                   word-break: break-word
 
-        .zimmmer-gallery-navigation
+        .zimmer-gallery-navigation
           position: relative
           display: flex
           gap: 32px
-          margin-left: 120px
+          margin-left: 20%
           margin-top: 16px
           .swiper-button-next,
           .swiper-button-prev
@@ -105,43 +106,56 @@
             margin-top: initial
             z-index: initial
 
-    .zimmer-card-wrapper--rev
-      //background-color: red
-      
-      &::after
-        left: 35%
-        right: 15%
-      .zimmer-content-wrapper
-        left: initial
-        right: -152px
-        .zimmmer-gallery-navigation
-          margin-right: 120px
-          margin-left: initial
-          justify-content: flex-end
+      &--rev
+        //background-color: red
+        &::after
+          left: 35%
+          right: 15%
+        .zimmer-content-wrapper
+          transform: translateX( 25% )
+          .zimmer-gallery-navigation
+            margin-right: 120px
+            margin-left: initial
+            justify-content: flex-end
 
-
-
-@media (max-width: $md)
+@media (max-width: $xl)
   .page-template-page-zimmer
     .section-zimmer-content
       .zimmer-card-wrapper
+        .zimmer-content-wrapper
+          .zimmer-content
+            .block-title
+              font-size: 40px
+              line-height: 48px
+
+@media (max-width: $lg)
+  .page-template-page-zimmer
+    .section-zimmer-content
+      .zimmer-card-wrapper
+        margin-top: 64px
+        margin-bottom: 0
         &::after
-          border: 2px solid $medium-grey
-          top: -60px
-          left: -15%
+          top: -40px
+          left: -20%
           right: 20%
-          bottom: -40px
+          bottom: 70px
+        &--rev
+          &::after
+            left: 20%
+            right: -20%
         .zimmer-gallery
           .swiper-wrapper
             .swiper-slide
               img
-                min-height: 300px
-                max-height: 300px
+                min-height: 500px
+                max-height: 500px
         .zimmer-content-wrapper
-          left: initial
-          margin-top: -40px
+          transform: translateX( 0% )
+          transform: translateY( -20% )
+          padding-left: 48px
+          padding-right: 48px
           .zimmer-content
-            padding: 40px 26px
+            padding: 32px
             .zimmer-title
               margin-bottom: 32px
               font-size: 40px
@@ -183,3 +197,62 @@
                     line-height: normal
                     white-space: normal
                     word-break: break-word
+          .zimmer-gallery-navigation
+            position: absolute
+            width: 100%
+            left: 50%
+            right: 0
+            top: -30%
+            transform: translateX( -50% )
+            margin: 0 auto
+            justify-content: space-between
+            .swiper-button-prev
+              margin-left: 16px
+            .swiper-button-next
+              margin-right: 16px
+
+@media (max-width: $md)
+  .page-template-page-zimmer
+    .section-zimmer-content
+      .zimmer-card-wrapper
+        .zimmer-content-wrapper
+          padding-left: 40px
+          padding-right: 40px
+          .zimmer-content
+            padding: 32px
+            .zimmer-title
+              font-size: 32px
+              line-height: 40px
+          .zimmer-gallery-navigation
+            top: -25%
+
+@media (max-width: $sm)
+  .page-template-page-zimmer
+    .section-zimmer-content
+      .zimmer-card-wrapper
+        &::after
+          top: -40px
+          left: -20%
+          right: 20%
+          bottom: 100px
+        &--rev
+          &::after
+            left: 20%
+            right: -20%
+        .zimmer-content-wrapper
+          padding-left: 16px
+          padding-right: 16px
+          .zimmer-content
+            padding: 24px
+            .zimmer-title
+              font-size: 32px
+              line-height: 40px
+            .zimmer-amenities
+              flex-wrap: wrap
+          .zimmer-gallery-navigation
+            top: -20%
+            .swiper-button-prev
+              margin-left: 0px
+            .swiper-button-next
+              margin-right: 0px
+          

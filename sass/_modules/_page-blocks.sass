@@ -145,7 +145,19 @@
         .block-content
           padding: 32px
         .block-gallery-navigation
-          //margin-left: 25%
+          position: absolute
+          width: 100%
+          left: 50%
+          right: 0
+          top: -50%
+          transform: translateX( -50% )
+          margin: 0 auto
+          justify-content: space-between
+          .swiper-button-prev
+            margin-left: 24px
+          .swiper-button-next
+            margin-right: 24px
+
 
       .block-image
         img
@@ -169,3 +181,9 @@
           .block-title
             font-size: 32px
             line-height: 40px
+        .block-gallery-navigation
+          top: -25%
+
+      .block-gallery
+        padding-right: 15px
+        padding-left: 15px

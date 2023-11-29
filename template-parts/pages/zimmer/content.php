@@ -8,9 +8,9 @@
 				the_row();
 				if ( $counter % 2 == 0 ) :
 					?>
-					<div class="col-12 col-sm-12 col-md-12 col-lg-10 zimmer-card-wrapper">
+					<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-10 zimmer-card-wrapper">
 						<div class="row justify-content-start">
-							<div class="col-12 col-md-6 col-lg-6 col-xl-6 zimmer-gallery zimmer-gallery-<?php echo esc_attr( $counter ); ?> swiper">
+							<div class="col-12 col-md-12 col-lg-6 col-xl-6 zimmer-gallery zimmer-gallery-<?php echo esc_attr( $counter ); ?> swiper">
 								<div class="swiper-wrapper">
 									<?php
 									$images = get_sub_field( 'gallery' );
@@ -26,7 +26,7 @@
 									?>
 								</div>
 							</div>
-							<div class="col-12 col-md-6 col-lg-6 col-xl-5 align-self-start zimmer-content-wrapper">
+							<div class="col-12 col-md-12 col-lg-5 col-xl-5 align-self-start zimmer-content-wrapper">
 								<div class="zimmer-content">
 									<h2 class="zimmer-title"><?php the_sub_field( 'title' ); ?></h2>
 									<p class="zimmer-description"><?php the_sub_field( 'description' ); ?></p>
@@ -68,7 +68,7 @@
 									endif;
 									?>
 								</div>
-								<div class="zimmmer-gallery-navigation">
+								<div class="zimmer-gallery-navigation">
 									<div class="swiper-button-prev zimmer-gallery-button-prev-<?php echo esc_attr( $counter ); ?>"></div>
 									<div class="swiper-button-next zimmer-gallery-button-next-<?php echo esc_attr( $counter ); ?>"></div>
 								</div>
@@ -78,9 +78,9 @@
 					<?php
 				else :
 					?>
-					<div class="col-12 col-sm-12 col-md-12 col-lg-10 zimmer-card-wrapper zimmer-card-wrapper--rev">
-						<div class="row justify-content-start">
-							<div class="col-12 col-md-6 col-lg-6 col-xl-5 align-self-start zimmer-content-wrapper">
+					<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-10 zimmer-card-wrapper zimmer-card-wrapper--rev">
+						<div class="row justify-content-end">
+							<div class="col-12 col-md-12 col-lg-5 col-xl-5 align-self-start zimmer-content-wrapper order-2 order-lg-1">
 								<div class="zimmer-content">
 									<h2 class="zimmer-title"><?php the_sub_field( 'title' ); ?></h2>
 									<p class="zimmer-description"><?php the_sub_field( 'description' ); ?></p>
@@ -122,12 +122,12 @@
 									endif;
 									?>
 								</div>
-								<div class="zimmmer-gallery-navigation">
+								<div class="zimmer-gallery-navigation">
 									<div class="swiper-button-prev zimmer-gallery-button-prev-<?php echo esc_attr( $counter ); ?>"></div>
 									<div class="swiper-button-next zimmer-gallery-button-next-<?php echo esc_attr( $counter ); ?>"></div>
 								</div>
 							</div>
-							<div class="col-12 col-md-6 col-lg-6 col-xl-6 zimmer-gallery zimmer-gallery-<?php echo esc_attr( $counter ); ?> swiper">
+							<div class="col-12 col-md-12 col-lg-6 col-xl-6 zimmer-gallery zimmer-gallery-<?php echo esc_attr( $counter ); ?> swiper order-1 order-lg-2">
 								<div class="swiper-wrapper">
 									<?php
 									$images = get_sub_field( 'gallery' );
