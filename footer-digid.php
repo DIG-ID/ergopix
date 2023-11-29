@@ -32,14 +32,14 @@ if ( function_exists( 'icl_get_languages' ) ) {
 				</div>
 			</div>
 			<div class="container">
-				<div class="row" style="justify-content: center;">
-					<div class=" col-sm-6 col-md-6 col-lg-6 col-xl-3 footer-digid-widget">
+				<div class="row justify-content-center">
+					<div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-2 footer-digid-widget">
 						<span class="footer-digid-widget--title"><?php _e( 'Find us' ); ?></span><br/>
 						Hotel Ambassador<br/>
 						Spissstrasse 10<br/>
 						CH - 3920 Zermatt
 					</div>
-					<div class="col-sm-6 col-md-6 col-lg-6 col-xl-3 contact-details footer-digid-widget">
+					<div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-3 contact-details footer-digid-widget">
 						<span class="footer-digid-widget--title"><?php _e( 'Contact us' ); ?></span><br/>
 						<span>T</span> <a href="tel:+41279662611">+41 27 966 26 11</a><br/>
 						<span>E</span> 
@@ -50,7 +50,7 @@ if ( function_exists( 'icl_get_languages' ) ) {
 						echo ( function_exists( 'encryptx' ) )? encryptx( $content, $args ) : $content;
 						?>
 					</div>
-					<div class="col-sm-12 col-md-12 col-lg-6 col-xl-2 contact-details footer-digid-widget">
+					<div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-2 contact-details footer-digid-widget">
 						<span class="footer-digid-widget--title"><?php _e( 'Links' ); ?></span><br/>
 						<?php if ( ICL_LANGUAGE_CODE == 'de' ) : ?>
 							<a href="https://www.ambassadorzermatt.com/impressum/">Impressum</a><br/>
@@ -68,15 +68,23 @@ if ( function_exists( 'icl_get_languages' ) ) {
 						<a class="badge_award" href='https://www.kayak.de/Zermatt-Hotels-Hotel-Ambassador-Zermatt.134275.ksp' target='_blank' style="float:left;margin: 0 15px;"><img height="130px" src='https://content.r9cdn.net/seo-res/badges/v4/DARK_MEDIUM_TRAVEL_AWARDS.png'/></a>
 						<iframe src="https://api.trustyou.com/hotels/37cbf743-49b8-46e9-b1a6-ea26577395f0/seal.html?key=63fc125c-2c8e-4473-a176-3ea27c63be70&size=l&scale=5" allowtransparency="true" frameborder="0" scrolling="no" height="101px" width="125px" style="float:left;"> </iframe>
 					</div> -->
-					<div class="col-sm-12 col-md-12 col-lg-6 col-xl-4 footer-digid-widget">
+					<div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-2 footer-digid-widget">
 						<a style="border-radius: 0px!important;border:0px!important;" href="http://eepurl.com/g35BeL" class="btn newsletter-btn" target="_blank">Newsletter</a><br><br><br>
 						<a href="https://www.facebook.com/pages/Hotel-Ambassador-Zermatt/213432722020893" target="_blank" class="social"><i class="fa fa-facebook" aria-hidden="true"></i></a>
 						<a href="https://www.instagram.com/ambassadorzermatt/" target="_blank" class="social"><i class="fa fa-instagram" aria-hidden="true"></i></a>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-12 copyright">
-						&copy; <?php echo date('Y'); ?> Ambassador Zermatt
+				<div class="row justify-content-center">
+					<div class="col">
+						<p class="copyright">
+							<?php
+							$y = date( 'Y' );
+							printf(
+								esc_html__( 'Urheberrecht &copy; %d Ambassador Zermatt', 'digid' ),
+								esc_html( $y )
+							);
+							?>
+						</p>
 					</div>
 				</div>
 			</div>

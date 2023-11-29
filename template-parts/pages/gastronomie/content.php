@@ -44,7 +44,7 @@
 								<?php
 							endif;
 							?>
-							<div class="col-12 col-md-12 col-lg-6 col-xl-5 align-self-start block-content-wrapper">
+							<div class="col-12 col-md-12 col-lg-5 col-xl-5 align-self-start block-content-wrapper">
 								<div class="block-content">
 									<h2 class="block-title"><?php the_sub_field( 'title' ); ?></h2>
 									<p class="block-description"><?php the_sub_field( 'description' ); ?></p>

@@ -113,6 +113,16 @@
           margin-left: initial
           justify-content: flex-end
 
+@media (max-width: $xl)
+  .section-blocks-content
+    .block-card-wrapper
+      .block-content-wrapper
+        .block-content
+          .block-title
+            font-size: 40px
+            line-height: 48px
+
+
 @media (max-width: $lg)
   .section-blocks-content
     .block-card-wrapper
@@ -129,23 +139,24 @@
           right: -20%
       .block-content-wrapper
         transform: translateX( 0% )
-        transform: translateY( -25% )
+        transform: translateY( -20% )
         padding-left: 48px
         padding-right: 48px
         .block-content
           padding: 32px
         .block-gallery-navigation
-          margin-left: 25%
+          //margin-left: 25%
+
       .block-image
         img
-          min-height: 640px
-          max-height: 640px
+          min-height: 500px
+          max-height: 500px
       .block-gallery
         .swiper-wrapper
           .swiper-slide
             img
-              min-height: 792px
-              max-height: 792px
+              min-height: 500px
+              max-height: 500px
 
 @media (max-width: $md)
   .section-blocks-content
@@ -155,3 +166,6 @@
         padding-right: 40px
         .block-content
           padding: 32px
+          .block-title
+            font-size: 32px
+            line-height: 40px
