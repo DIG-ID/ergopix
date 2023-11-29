@@ -8,4 +8,4 @@
 		<p><?php _e( 'Désolé, mais rien ne correspond à vos critères de recherche. S\'il vous plaît essayez de nouveau avec des mots clés différents.', 'ergopix' ); ?></p>
 	<?php endif; ?>
 <?php get_sidebar(); ?>
-<?php get_footer(); ?>
+<?php get_footer( 'digid' ); ?>

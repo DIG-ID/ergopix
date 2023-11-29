@@ -63,4 +63,4 @@ while ( have_posts() ) : the_post();
 	</div>
  <?php  
 endwhile;
-get_footer();
+get_footer( 'digid' );

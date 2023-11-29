@@ -113,4 +113,4 @@ Toutes les offres sont sans engagement. Des parties de pages ou la publication c
 	</div>
  <?php  
 endwhile;
-get_footer();
+get_footer('digid');

@@ -14,4 +14,4 @@ if ( have_posts() ) :
 		get_template_part( 'template-parts/modules/page-links' );
 	endwhile;
 endif;
-get_footer();
+get_footer( 'digid' );
