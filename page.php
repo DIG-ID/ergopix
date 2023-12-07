@@ -11,7 +11,7 @@ while ( have_posts() ) : the_post();
 	ergopix_content_composer($entityFields);
 	
 	# Get random parent page
-	$args = array(
+	/*$args = array(
 			'sort_order' => 'asc',
 			'sort_column' => 'post_title',
 			'hierarchical' => 1,
@@ -348,4 +348,4 @@ while ( have_posts() ) : the_post();
 	<?php
 	get_template_part( 'template-parts/modules/page-links' );
 endwhile;
-get_footer(  'digid' );
+get_footer( 'digid' );
