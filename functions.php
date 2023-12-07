@@ -70,8 +70,8 @@ add_action( 'wp_enqueue_scripts', 'digid_theme_enqueue_styles' );
 
 add_action( 'after_setup_theme', 'digid_theme_setup' );
 function digid_theme_setup() {
-	add_image_size( 'block-portrait', 700, 800, );
-	add_image_size( 'page-header', 1920, 780, );
+	add_image_size( 'block-portrait', 900, 800 );
+	add_image_size( 'page-header', 1920, 780 );
 }
 
 
