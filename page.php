@@ -46,7 +46,7 @@ while ( have_posts() ) : the_post();
 	</div>
 
 	 
-	<?php if ( is_page( 192 ) ) { ?>
+	<?php/* if ( is_page( 192 ) ) { ?>
 			<div class="wrapper random-blocks-alt"><div class="section">
 				<div class="row no-gutters"><div class="col-12"><h2 class="see-also-title"><?php _e('See also'); ?></h2></div>
 					<div class="col-md-6 bg-cover-norepeat" style="background-image:url(/wp-content/uploads/2020/05/hotel-zimmer-ambassador-zermatt.png);">
@@ -343,7 +343,7 @@ while ( have_posts() ) : the_post();
 					</div>
 				</div></div>
 			</div></div>
-	<?php } ?>
+	<?php } */?>
 
 	<?php
 	get_template_part( 'template-parts/modules/page-links' );
