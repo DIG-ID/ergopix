@@ -20,10 +20,10 @@ if(function_exists('icl_get_languages')) {
 			<div class="container container-partners">
 				<div class="row justify-content-center align-items-center row-partners">
 					<div class="col-5 col-md-2 partner">
-						<img src="/wp-content/uploads/2023/01/theforkmin-1.svg" alt="the fork, a tripadvisor company" style="width: 100%;max-width: 190px;">
+						<img src="https://www.ambassadorzermatt.com/wp-content/uploads/2023/12/thefork-black.svg" alt="the fork, a tripadvisor company" style="width: 100%;max-width: 190px;">
 					</div>
 					<div class="col-5 col-md-2 partner">
-						<img src="/wp-content/wp-content/uploads/2023/12/thefork-black.svg" style="max-height: 115px;">
+						<img src="https://www.ambassadorzermatt.com/wp-content/uploads/2023/12/tc-2022-ll-blackmin.svg" style="max-height: 115px;">
 					</div>
 					<div class="col-5 col-md-2 partner">
 						<a class="badge_award" href='https://www.kayak.de/Zermatt-Hotels-Hotel-Ambassador-Zermatt.134275.ksp' target='_blank' ><img src='https://content.r9cdn.net/seo-res/badges/v4/DARK_MEDIUM_TRAVEL_AWARDS.png' style="max-height: 115px;"/></a>
