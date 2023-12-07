@@ -345,6 +345,7 @@ while ( have_posts() ) : the_post();
 			</div></div>
 	<?php } ?>
 
- <?php  
+	<?php
+	get_template_part( 'template-parts/modules/page-links' );
 endwhile;
 get_footer(  'digid' );
