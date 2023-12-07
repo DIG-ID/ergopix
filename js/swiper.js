@@ -10,9 +10,6 @@ document.addEventListener("DOMContentLoaded", () => {
 			var zimmerSwiper = new Swiper(".zimmer-gallery-0", {
 				loop: true,
 				speed: 800,
-				autoplay: {
-					delay: 3000,
-				},
 				navigation: {
 					nextEl: ".zimmer-gallery-button-next-0",
 					prevEl: ".zimmer-gallery-button-prev-0",
@@ -21,9 +18,6 @@ document.addEventListener("DOMContentLoaded", () => {
 			var zimmer02Swiper = new Swiper(".zimmer-gallery-1", {
 				loop: true,
 				speed: 800,
-				autoplay: {
-					delay: 3000,
-				},
 				navigation: {
 					nextEl: ".zimmer-gallery-button-next-1",
 					prevEl: ".zimmer-gallery-button-prev-1",
@@ -32,9 +26,6 @@ document.addEventListener("DOMContentLoaded", () => {
 			var zimmer03Swiper = new Swiper(".zimmer-gallery-2", {
 				loop: true,
 				speed: 800,
-				autoplay: {
-					delay: 3000,
-				},
 				navigation: {
 					nextEl: ".zimmer-gallery-button-next-2",
 					prevEl: ".zimmer-gallery-button-prev-2",
@@ -43,9 +34,6 @@ document.addEventListener("DOMContentLoaded", () => {
 			var zimmer04Swiper = new Swiper(".zimmer-gallery-3", {
 				loop: true,
 				speed: 800,
-				autoplay: {
-					delay: 3000,
-				},
 				navigation: {
 					nextEl: ".zimmer-gallery-button-next-3",
 					prevEl: ".zimmer-gallery-button-prev-3",
@@ -58,9 +46,6 @@ document.addEventListener("DOMContentLoaded", () => {
 			var blockSwiper = new Swiper(".block-gallery-0", {
 				loop: true,
 				speed: 800,
-				autoplay: {
-					delay: 3000,
-				},
 				navigation: {
 					nextEl: ".block-gallery-button-next-0",
 					prevEl: ".block-gallery-button-prev-0",
@@ -69,9 +54,6 @@ document.addEventListener("DOMContentLoaded", () => {
 			var block02Swiper = new Swiper(".block-gallery-1", {
 				loop: true,
 				speed: 800,
-				autoplay: {
-					delay: 3000,
-				},
 				navigation: {
 					nextEl: ".block-gallery-button-next-1",
 					prevEl: ".block-gallery-button-prev-1",
@@ -80,9 +62,6 @@ document.addEventListener("DOMContentLoaded", () => {
 			var block03Swiper = new Swiper(".block-gallery-2", {
 				loop: true,
 				speed: 800,
-				autoplay: {
-					delay: 3000,
-				},
 				navigation: {
 					nextEl: ".block-gallery-button-next-2",
 					prevEl: ".block-gallery-button-prev-2",
@@ -91,9 +70,6 @@ document.addEventListener("DOMContentLoaded", () => {
 			var block04Swiper = new Swiper(".block-gallery-3", {
 				loop: true,
 				speed: 800,
-				autoplay: {
-					delay: 3000,
-				},
 				navigation: {
 					nextEl: ".block-gallery-button-next-3",
 					prevEl: ".block-gallery-button-prev-3",
@@ -106,9 +82,6 @@ document.addEventListener("DOMContentLoaded", () => {
 			var blockSwiper = new Swiper(".block-gallery-0", {
 				loop: true,
 				speed: 800,
-				autoplay: {
-					delay: 3000,
-				},
 				navigation: {
 					nextEl: ".block-gallery-button-next-0",
 					prevEl: ".block-gallery-button-prev-0",
@@ -118,9 +91,6 @@ document.addEventListener("DOMContentLoaded", () => {
 				loop: true,
 				parallax: true,
 				speed: 800,
-				autoplay: {
-					delay: 3000,
-				},
 				navigation: {
 					nextEl: ".block-gallery-button-next-1",
 					prevEl: ".block-gallery-button-prev-1",
@@ -130,9 +100,6 @@ document.addEventListener("DOMContentLoaded", () => {
 				loop: true,
 				parallax: true,
 				speed: 800,
-				autoplay: {
-					delay: 3000,
-				},
 				navigation: {
 					nextEl: ".block-gallery-button-next-2",
 					prevEl: ".block-gallery-button-prev-2",
