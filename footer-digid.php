@@ -1,18 +1,18 @@
 <?php 
 # Languages
 $lang = 'fr';
-if ( function_exists( 'icl_get_languages' ) ) {
+if ( function_exists( 'wpml_active_languages' ) ) {
+	$active_languages = wpml_active_languages();
 
-	$languages = icl_get_languages( 'skip_missing=0&orderby=name&order=asc&link_empty_to=str' );
-
-	foreach ( $languages as $abrv => $language ){
+	foreach ( $active_languages as $language ) :
 		// Active?
-		if ( 1 === $language['active'] ) {
-			$lang = $abrv;
+		if ( $language['active'] ) :
+			$lang = $language['language_code'];
 			break;
-		}
-	}
+		endif;
+	endforeach;
 }
+
 ?>
 		<footer class="footer-digid">
 			<div class="container container-partners">
@@ -93,11 +93,17 @@ if ( function_exists( 'icl_get_languages' ) ) {
 			<ul>
 				<?php
 				// Menus.
-				$menu = array( wp_get_nav_menu_items( 'Main Menu - ' . $lang ), wp_get_nav_menu_items( 'Sub Menu - '.$lang ) );
+
+				//$main_menu = wp_get_nav_menu_object( 'menu-main' );
+				//$main_menu = wp_get_nav_menu( 'menu-main' );
+
+				//var_dump( $main_menu );
+				$mmenu = array( wp_get_nav_menu_items( 'Main Menu - ' . $lang ), wp_get_nav_menu_items( 'Sub Menu - ' . $lang ) );
+				//var_dump( $menu );
 				$remasterizeMMenu = array();
 
 				// Parse Menu Mobile.
-				foreach( $menu as $m => $aMenu ) {
+				foreach( $mmenu as $m => $aMenu ) {
 					$i = 0;
 					foreach( $aMenu as $m => $item ) {
 						// Parent.
