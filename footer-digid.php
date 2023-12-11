@@ -1,17 +1,25 @@
 <?php 
 # Languages
 $lang = 'fr';
-if ( function_exists( 'wpml_active_languages' ) ) {
-	$active_languages = wpml_active_languages();
+if (function_exists('wpml_active_languages')) {
+	$args = array(
+			'skip_missing' => 0,
+			'orderby'      => 'name',
+			'order'        => 'asc',
+			'link_empty_to' => 'str',
+	);
 
-	foreach ( $active_languages as $language ) :
-		// Active?
-		if ( $language['active'] ) :
-			$lang = $language['language_code'];
-			break;
-		endif;
-	endforeach;
+	$active_languages = wpml_active_languages($args);
+
+	foreach ($active_languages as $language) {
+			// Active?
+			if ($language['active']) {
+					$lang = $language['language_code'];
+					break;
+			}
+	}
 }
+
 
 ?>
 		<footer class="footer-digid">
