@@ -7,9 +7,6 @@ $languages = apply_filters( 'wpml_active_languages', NULL, 'skip_missing=0&order
 //var_dump($mylanguages);
 
 if ( ! empty( $languages ) ) {
-	/*foreach ( $languages as $language ) {
-		$lang = $language['active'] ? $language['language_code'] : $language['code'];
-	}*/
 	foreach ( $languages as $abrv => $language ) {
 		// Active?
 		if ( 1 == $language['active'] ) {
