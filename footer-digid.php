@@ -1,25 +1,26 @@
 <?php 
 # Languages
 $lang = 'fr';
-if (function_exists('wpml_active_languages')) {
+if ( function_exists( 'wpml_active_languages' ) ) :
 	$args = array(
-			'skip_missing' => 0,
-			'orderby'      => 'name',
-			'order'        => 'asc',
-			'link_empty_to' => 'str',
+		'skip_missing'  => 0,
+		'orderby'       => 'name',
+		'order'         => 'asc',
+		'link_empty_to' => 'str',
 	);
 
-	$active_languages = wpml_active_languages($args);
+	$active_languages = wpml_active_languages( $args );
 
-	foreach ($active_languages as $language) {
-			// Active?
-			if ($language['active']) {
-					$lang = $language['language_code'];
-					break;
-			}
-	}
-}
+	var_dump( $active_languages );
 
+	foreach ( $active_languages as $language ) :
+		// Active?
+		if ( $language['active'] ) :
+			$lang = $language['language_code'];
+			break;
+		endif;
+	endforeach;
+endif;
 
 ?>
 		<footer class="footer-digid">
@@ -101,11 +102,7 @@ if (function_exists('wpml_active_languages')) {
 			<ul>
 				<?php
 				// Menus.
-
-				//$main_menu = wp_get_nav_menu_object( 'menu-main' );
-				//$main_menu = wp_get_nav_menu( 'menu-main' );
-
-				//var_dump( $main_menu );
+				/*var_dump( $lang );
 				$mmenu = array( wp_get_nav_menu_items( 'Main Menu - ' . $lang ), wp_get_nav_menu_items( 'Sub Menu - ' . $lang ) );
 				//var_dump( $menu );
 				$remasterizeMMenu = array();
@@ -158,7 +155,7 @@ if (function_exists('wpml_active_languages')) {
 
 					// Print Element.
 					echo $menuItemHTML;
-				}
+				}*/
 
 				do_action( 'wpml_add_language_selector' );
 				?>
