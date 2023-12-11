@@ -330,7 +330,7 @@ if ( function_exists( 'icl_get_languages' ) ) {
 						.newmenu-items .menu-a-blocks::before{transition: 0.2s;}
 						.header-sub-menu-content{bottom:120px;}
 						.header-sub-menu-content ul li{display: list-item;width:auto;float: none;}
-						.header-menu-content > ul > li:last-child{display: none;}
+						/*.header-menu-content > ul > li:last-child{display: none;}*/
 						@media (max-width:768px){
 							.boxzilla{width:100%;}
 						}
