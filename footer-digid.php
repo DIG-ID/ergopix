@@ -1,26 +1,24 @@
 <?php 
 # Languages
 $lang = 'fr';
-if ( function_exists( 'wpml_active_languages' ) ) :
-	$args = array(
-		'skip_missing'  => 0,
-		'orderby'       => 'name',
-		'order'         => 'asc',
-		'link_empty_to' => 'str',
-	);
 
-	$active_languages = wpml_active_languages( $args );
+$languages = apply_filters( 'wpml_active_languages', NULL, 'skip_missing=0&orderby=name&order=asc&link_empty_to=str' );
 
-	var_dump( $active_languages );
+//var_dump($mylanguages);
 
-	foreach ( $active_languages as $language ) :
+if ( ! empty( $languages ) ) {
+	/*foreach ( $languages as $language ) {
+		$lang = $language['active'] ? $language['language_code'] : $language['code'];
+	}*/
+	foreach ( $languages as $abrv => $language ) {
 		// Active?
-		if ( $language['active'] ) :
-			$lang = $language['language_code'];
+		if ( 1 == $language['active'] ) {
+			$lang = $abrv;
 			break;
-		endif;
-	endforeach;
-endif;
+		}
+	}
+}
+
 
 ?>
 		<footer class="footer-digid">
@@ -102,7 +100,6 @@ endif;
 			<ul>
 				<?php
 				// Menus.
-				/*var_dump( $lang );
 				$mmenu = array( wp_get_nav_menu_items( 'Main Menu - ' . $lang ), wp_get_nav_menu_items( 'Sub Menu - ' . $lang ) );
 				//var_dump( $menu );
 				$remasterizeMMenu = array();
@@ -155,7 +152,7 @@ endif;
 
 					// Print Element.
 					echo $menuItemHTML;
-				}*/
+				}
 
 				do_action( 'wpml_add_language_selector' );
 				?>
