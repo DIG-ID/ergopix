@@ -1,22 +1,16 @@
-<?php 
-# Languages
-$lang = 'fr';
-
-$languages = apply_filters( 'wpml_active_languages', NULL, 'skip_missing=0&orderby=name&order=asc&link_empty_to=str' );
-
-//var_dump($mylanguages);
-
-if ( ! empty( $languages ) ) {
-	foreach ( $languages as $abrv => $language ) {
+<?php
+// Languages.
+$lang      = 'fr';
+$languages = apply_filters( 'wpml_active_languages', null, 'skip_missing=0&orderby=name&order=asc&link_empty_to=str' );
+if ( ! empty( $languages ) ) :
+	foreach ( $languages as $abrv => $language ) :
 		// Active?
-		if ( 1 == $language['active'] ) {
+		if ( 1 === $language['active'] ) :
 			$lang = $abrv;
 			break;
-		}
-	}
-}
-
-
+		endif;
+	endforeach;
+endif;
 ?>
 		<footer class="footer-digid">
 			<div class="container container-partners">

@@ -1,16 +1,16 @@
 <?php
-// Languages
-$lang = 'fr';
-if ( function_exists( 'icl_get_languages' ) ) {
-	$languages = icl_get_languages( 'skip_missing=0&orderby=name&order=asc&link_empty_to=str' );
-	foreach ( $languages as $abrv => $language ) {
+// Languages.
+$lang      = 'fr';
+$languages = apply_filters( 'wpml_active_languages', null, 'skip_missing=0&orderby=name&order=asc&link_empty_to=str' );
+if ( ! empty( $languages ) ) :
+	foreach ( $languages as $abrv => $language ) :
 		// Active?
-		if ( 1 == $language['active'] ) {
+		if ( 1 === $language['active'] ) :
 			$lang = $abrv;
 			break;
-		}
-	}
-}
+		endif;
+	endforeach;
+endif;
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>

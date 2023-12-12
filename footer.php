@@ -1,21 +1,17 @@
-<?php 
-# Languages
-$lang = 'fr';
-if(function_exists('icl_get_languages')) {
-
-	$languages = icl_get_languages('skip_missing=0&orderby=name&order=asc&link_empty_to=str');
-						
-	foreach($languages as $abrv => $language){
-							
-		# Active?
-		if($language['active'] == 1){
+<?php
+// Languages.
+$lang      = 'fr';
+$languages = apply_filters( 'wpml_active_languages', null, 'skip_missing=0&orderby=name&order=asc&link_empty_to=str' );
+if ( ! empty( $languages ) ) :
+	foreach ( $languages as $abrv => $language ) :
+		// Active?
+		if ( 1 === $language['active'] ) :
 			$lang = $abrv;
 			break;
-		}
-		
-	}
-}
-?>	
+		endif;
+	endforeach;
+endif;
+?>
 		<footer>
 			<div class="container container-partners">
 				<div class="row justify-content-center align-items-center row-partners">
