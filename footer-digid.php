@@ -1,16 +1,7 @@
 <?php
 // Languages.
-$lang      = 'fr';
-$languages = apply_filters( 'wpml_active_languages', null, 'skip_missing=0&orderby=name&order=asc&link_empty_to=str' );
-if ( ! empty( $languages ) ) :
-	foreach ( $languages as $abrv => $language ) :
-		// Active?
-		if ( 1 === $language['active'] ) :
-			$lang = $abrv;
-			break;
-		endif;
-	endforeach;
-endif;
+$post_lang = apply_filters( 'wpml_post_language_details', null, get_the_ID() );
+$lang      = ! empty( $post_lang['language_code'] ) ? $post_lang['language_code'] : 'fr';
 ?>
 		<footer class="footer-digid">
 			<div class="container container-partners">
