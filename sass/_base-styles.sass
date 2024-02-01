@@ -19,3 +19,93 @@ html.fixed
   header
     .main-header
       z-index: 99999
+
+.home.page-template-default
+  .page-header-block
+    display: flex
+    flex-direction: column
+    align-items: center
+    .weather
+      span
+
+.restaurant-carbon-btn
+  position: relative
+  display: inline-flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+
+  width: 150px
+  height: 150px
+  margin-top: 30px
+
+  font-family: "Work Sans"
+  font-size: 14px
+  font-weight: 500
+  line-height: 16px
+  text-transform: uppercase
+  text-align: center
+  letter-spacing: 2.67px
+
+  border: 2px solid $main-red
+  border-radius: 9999px
+
+  color: $main-red
+  background-color: #fff
+
+  transition: .3s all ease-in-out
+  transform: scale(1.00000001)
+  box-shadow: 0 8px 24px 0 rgba(0,0,0,0.0)
+  cursor: pointer
+  outline: none
+
+  &:hover
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.14)
+    transform: scale(1.04)
+    color: #fff
+    background-color: $main-red
+    border-color: #fff
+    svg
+      path
+        fill: #fff
+
+  &:focus
+    outline: none
+  &:active
+    outline: none
+
+  svg
+    position: absolute
+    left: 50%
+    bottom: 16px
+    transform: translateX(-50%)
+    path
+      fill: $main-red
+
+@media (max-width: $lg)
+  .restaurant-carbon-btn
+    width: 120px
+    height: 120px
+    margin-top: 20px
+
+
+    font-size: 11px
+
+    line-height: 14px
+
+    letter-spacing: 2.67px
+
+
+    &:hover
+
+
+    svg
+      bottom: 10px
+
+@media (max-width: $sm)
+  .restaurant-carbon-btn
+    font-size: 10px
+    line-height: 12px
+    letter-spacing: 2.67px
+    svg
+      bottom: 12px
