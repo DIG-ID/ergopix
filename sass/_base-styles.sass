@@ -25,12 +25,13 @@ html.fixed
     display: flex
     flex-direction: column
     align-items: center
-    .weather
-      span
+
+    .restaurant-carbon-btn
+      display: inline-flex
 
 .restaurant-carbon-btn
+  display: none
   position: relative
-  display: inline-flex
   flex-direction: column
   justify-content: center
   align-items: center
@@ -67,14 +68,14 @@ html.fixed
     //border-color: #fff
     svg
       path
-        
         fill: $main-red
 
   &:focus
     outline: none
+    color: #fff
   &:active
     outline: none
-
+    color: $main-red
   svg
     position: absolute
     left: 50%
