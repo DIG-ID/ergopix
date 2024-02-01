@@ -281,7 +281,7 @@ if ( function_exists( 'icl_get_languages' ) ) {
 					<?php 
 				} 
 				?>
-				<a href="/restaurant-carbon-zermatt/" class="restaurant-carbon-btn">
+				<a href="restaurant-carbon-zermatt/" class="restaurant-carbon-btn">
 					<?php
 					$dig_lang = apply_filters( 'wpml_current_language', null );
 					switch ( $dig_lang ) :
