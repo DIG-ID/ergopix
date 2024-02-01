@@ -50,8 +50,8 @@ html.fixed
   border: 2px solid transparent
   border-radius: 9999px
 
-  color: $main-red
-  background-color: #fff
+  color: #fff
+  background-color: $main-red
 
   transition: .3s all ease-in-out
   transform: scale(1.00000001)
@@ -62,12 +62,13 @@ html.fixed
   &:hover
     box-shadow: 0 8px 32px 0 rgba(0,0,0,0.14)
     transform: scale(1.04)
-    color: #fff
-    background-color: $main-red
-    border-color: #fff
+    color: $main-red
+    background-color: #fff
+    //border-color: #fff
     svg
       path
-        fill: #fff
+        
+        fill: $main-red
 
   &:focus
     outline: none
@@ -79,8 +80,10 @@ html.fixed
     left: 50%
     bottom: 16px
     transform: translateX(-50%)
+    transition: .3s all ease-in-out
     path
-      fill: $main-red
+      transition: .3s all ease-in-out
+      fill: #fff
 
 @media (max-width: $lg)
   .restaurant-carbon-btn
