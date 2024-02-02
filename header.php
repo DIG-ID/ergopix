@@ -274,13 +274,13 @@ if ( function_exists( 'icl_get_languages' ) ) {
 							$dig_lang = apply_filters( 'wpml_current_language', null );
 							switch ( $dig_lang ) :
 								case 'en' :
-									echo esc_html( 'Discover the Carbon restaurant' );
+									echo esc_html( 'NEW: RESTAURANT CARBON' );
 									break;
 								case 'fr':
-									echo esc_html( 'Découvrez le restaurant Carbon' );
+									echo esc_html( 'NOUVEAU: RESTAURANT CARBON' );
 									break;
 								case 'de':
-									echo esc_html( 'Entdecken Sie das Restaurant Carbon' );
+									echo esc_html( 'NEU: RESTAURANT CARBON' );
 									break;
 							endswitch;
 							?>
