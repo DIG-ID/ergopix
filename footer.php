@@ -145,7 +145,8 @@ $lang      = ! empty( $post_lang['language_code'] ) ? $post_lang['language_code'
 							$itemItSelf = '';
 							$menuItemHTML.= '<span>'.$menuItem['parent']['title'].'</span>'.'<ul class="sub-menu">'.$itemItSelf.$childList.'</ul>'."\n";
 						}
-						else $menuItemHTML.= '<li><a href="'.$menuItem['parent']['url'].'" class="'.$menuItem['parent']['active'].'">'.$menuItem['parent']['title'].'</a></li>';
+						//.$menuItem['parent']['active'].'">'
+						else $menuItemHTML.= '<li><a href="'.$menuItem['parent']['url'].'" class="'.$menuItem['parent']['title'].'</a></li>';
 						
 						$menuItemHTML.= '</li>'."\n";
 						

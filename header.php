@@ -375,6 +375,7 @@ if ( function_exists( 'icl_get_languages' ) ) {
 						# We Have one or some child valid
 						if($childList != ''){
 							//var_dump($menuItem);
+							//  '.$menuItem['parent']['active-as-child'].'
 							$itemItSelf = '<li class="item child-item itemItself">'.$menuItem['parent']['title'].'</li>';
 							$menuItemHTML.= '<ul class="sub-menu">'.$itemItSelf.$childList.'</ul>'."\n"; // '<span>'.$menuItem['parent']['title'].'</span>'.
 						}
