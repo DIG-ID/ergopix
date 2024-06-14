@@ -120,7 +120,8 @@ $lang      = ! empty( $post_lang['language_code'] ) ? $post_lang['language_code'
 					if ( count( $menuItem['children'] ) > 0 ) {
 						// Check validity of each.
 						foreach ( $menuItem['children'] as $cID => $child ) {
-							$childList.= '<li class="item child-item '.$child['active'].'"><a href="'.$child['url'].'" class="'.$child['active'].'">'.$child['title'].'</a></li>'."\n";
+							//'.$child['active'].'
+							$childList.= '<li class="item child-item "><a href="'.$child['url'].'" class="'.$child['active'].'">'.$child['title'].'</a></li>'."\n";
 						}
 					}
 					// We Have one or some child valid.
