@@ -359,7 +359,7 @@ if ( function_exists( 'icl_get_languages' ) ) {
 					}
 					foreach($remasterizeMMenu as $mID => $menuItem){
 						$activeItem = '';
-						$menuItemHTML = '<li id="li-'.$mID.'" class="item '.$activeItem.'">';
+						$menuItemHTML = '<li id="li-'.$mID.'" class="item '.$menuItem['active'].'">';
 						
 						# Do we have Children?
 						$childList = '';
